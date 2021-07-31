@@ -1,6 +1,6 @@
 import React from 'react'
 
-function HeaderButtonGroup({ onPreviousPage, onNextPage }) {
+const HeaderButtonGroup = ({ onPreviousPage, onNextPage }) => {
   if (typeof onPreviousPage !== 'function' || typeof onNextPage !== 'function') {
     throw new Error('onPreviouPage와 onNextPage 의 props 가 제대로 전달되지 않았습니다.')
   }
